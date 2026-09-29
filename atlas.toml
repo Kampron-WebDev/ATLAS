@@ -1,0 +1,48 @@
+# ATLAS configuration. Edit freely; ATLAS reads it on every run.
+
+[learner]
+name = ""                      # empty → your git user.name
+
+[atlas]
+workers = 6                    # tests run in parallel
+test_timeout_seconds = 40
+daily_minutes = 150            # how much time "Today's plan" should fill
+similarity_warning = 0.93      # flag code this close to the model answer (0–1)
+notes_filled_threshold = 0.6   # share of MY-NOTES sections that must be written
+stuck_after_days = 3           # an exercise failing this long counts as "stuck"
+review_intervals_days = [1, 3, 7, 21, 60]   # spaced-repetition schedule
+spine = "fullstack"            # the course the others should stay aligned with
+hold_gap_weeks = 2.0           # put a course ON HOLD when it's this many planned weeks ahead of
+                               # your slowest course (0 = never hold)
+
+# One section per course. `adapter` tells ATLAS how the course is laid out.
+# `weekly_hours` is your planned time split (from SYNC.md), used for balance advice.
+
+[courses.fullstack]
+title = "Full-Stack Engineering Mastery"
+path = "~/Desktop/Full-Stack-Engineering-Mastery"
+adapter = "fullstack"
+weekly_hours = 8
+
+[courses.jsts]
+title = "JavaScript & TypeScript Mastery"
+path = "~/Desktop/JavaScript-TypeScript-Mastery"
+adapter = "jsts"
+weekly_hours = 6
+
+[courses.python]
+title = "Python Engineering Mastery"
+path = "~/Desktop/Python-Engineering-Mastery"
+adapter = "python"
+python = ".venv/Scripts/python.exe"   # relative to the course folder
+weekly_hours = 4
+
+[courses.cpp]
+title = "The C++ 20 Masterclass"
+path = "~/Desktop/The-C-20-Masterclass-Source-Code-main"
+adapter = "cpp"
+gxx = "C:/mingw64/bin/g++.exe"
+weeks_per_lesson = 1.0         # planned study weeks per C++ lesson folder
+# The same input is fed to your program AND the model answer, so their outputs can be compared.
+stdin = "5 7 3 3725 87 2 4 6 8 10\n"
+weekly_hours = 2

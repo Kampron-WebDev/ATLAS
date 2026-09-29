@@ -1,0 +1,34 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "ATLAS: full review",
+      "type": "shell",
+      "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"${workspaceFolder}\\atlas.ps1\"",
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": { "clear": true, "focus": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "ATLAS: what's my next lesson?",
+      "type": "shell",
+      "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"${workspaceFolder}\\atlas.ps1\" next",
+      "presentation": { "clear": true, "focus": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "ATLAS: review + open dashboard",
+      "type": "shell",
+      "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"${workspaceFolder}\\atlas.ps1\" --open",
+      "presentation": { "clear": true, "focus": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "ATLAS: run its own tests",
+      "type": "shell",
+      "command": "& \"$env:USERPROFILE\\Desktop\\Python-Engineering-Mastery\\.venv\\Scripts\\python.exe\" -m pytest",
+      "group": "test",
+      "problemMatcher": []
+    }
+  ]
+}

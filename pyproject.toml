@@ -1,0 +1,18 @@
+[project]
+name = "atlas"
+version = "1.0.0"
+description = "ATLAS: Assessment, Tracking & Learning Analytics System. Your Chief Engineer, tutor and examiner."
+requires-python = ">=3.12"
+dependencies = []  # standard library only
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q -p no:cacheprovider"
+
+[tool.ruff]
+line-length = 130
+target-version = "py312"
