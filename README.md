@@ -36,10 +36,18 @@ From this folder, in PowerShell:
 | `atlas eta` | Pace and projected finish date for every course |
 | `atlas history` | Your progress over time |
 | `atlas courses` | Course keys: `fullstack`, `jsts`, `python`, `cpp` |
+| `atlas tutor [path \| words]` | The context pack for **Athena**, your tutor (fast: runs no tests) |
 
 Add `--no-tests` to reuse cached results (instant), or `--course python` to look at one course.
 
 **Tip:** add this folder to your PATH and you can type `atlas next` from anywhere.
+
+## 🦉 Athena, your tutor
+
+Reading alone isn't enough. In Claude Code or Codex chat, type **`athena @<lesson folder>`** and Athena teaches the
+lesson one micro-concept at a time, with diagrams, live examples and a check before each step. She coaches exercises
+without giving answers, adds the concepts you ask about to your notes, and remembers you between sessions. See
+[`tutor/README.md`](tutor/README.md).
 
 ## 📂 What ATLAS writes
 

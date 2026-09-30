@@ -1,6 +1,6 @@
 # 📝 ATLAS Author Brief: JavaScript & TypeScript Mastery
 
-*For whoever writes this learner's next lessons (usually Claude). Generated 29 Sep 2026 13:40.*
+*For whoever writes this learner's next lessons (usually Claude). Generated 30 Sep 2026 05:55.*
 
 **Authorization:** ⛔ DENIED. Next unit: Module 003: Variables & Values
 
@@ -10,16 +10,16 @@
 
 ## Learner profile
 
-- Pace: 0.52× plan (recent 0.52×)
+- Pace: 0.34× plan (recent 0.34×)
 - Lessons completed: 1 · touched: 1
-- Exercises passing: 4/31
+- Exercises passing: 3/31
 - Average notes completeness: 100%
-- Position: Module 001: Introduction to Programming → Lesson 02: Values, Expressions & Statements
+- Position: Orientation → 00 · Orientation
 
 ## Directives (binding)
 
-1. Pace is 0.5× the plan. Reduce the load: smaller steps, more worked examples, hints on every exercise, and split long lessons in two.
-2. Finished code keeps its TODO comments. Add 'tidy up' to the Done-when checklist.
+1. Pace is 0.3× the plan. Reduce the load: smaller steps, more worked examples, hints on every exercise, and split long lessons in two.
+2. Several solutions match the model answers closely. Use variation exercises whose answers can't be pattern-matched, and add 'explain your solution' prompts.
 3. The learner has completed C++ up to 'Lesson 02: Programming Thinking'. Cross-reference those concepts where they help.
 
 ## Evidence

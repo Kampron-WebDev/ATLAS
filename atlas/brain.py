@@ -8,6 +8,7 @@ from collections import Counter
 from dataclasses import dataclass, field
 from datetime import date, datetime, timedelta
 
+from . import tutor
 from .config import Config
 from .model import CourseReport, GateCheck, Lesson, Module
 from .state import Ledger
@@ -384,6 +385,11 @@ def directives(report: CourseReport, reports: list[CourseReport], config: Config
 
     if report.key in holds:
         out.append(f"HOLD: {holds[report.key]} Do not generate new lessons for this course until ATLAS lifts the hold.")
+
+    shaky = tutor.flagged_concepts(config).get(report.key)
+    if shaky:
+        out.append(f"Athena (the tutor) still sees these concepts as shaky: {'; '.join(shaky[:6])}. "
+                   "Open the next unit with a short warm-up that revisits them from a new angle.")
 
     cpp = next((r for r in reports if r.adapter == "cpp" and r.key != report.key), None)
     if cpp:

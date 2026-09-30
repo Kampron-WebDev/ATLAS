@@ -1,35 +1,35 @@
-# 🏛️ ATLAS Review: Tuesday 29 September 2026, 13:40
+# 🏛️ ATLAS Review: Wednesday 30 September 2026, 05:55
 
-*Good afternoon, Kampron. Here is my assessment of all four courses.*
+*Good morning, Kampron. Here is my assessment of all four courses.*
 
 ## 🧭 My verdict
 
-You're active in 4 of 4 courses. Strongest momentum: **The C++ 20 Masterclass** (4.79× plan). I've put **The C++ 20 Masterclass** on hold: you're racing ahead there while another course falls behind. My code review found **6 warning(s)**: see *Code review* below. Small habits become big careers.
+You're active in 3 of 4 courses. Strongest momentum: **The C++ 20 Masterclass** (4.10× plan). I've put **The C++ 20 Masterclass** on hold: you're racing ahead there while another course falls behind. My code review found **2 warning(s)**: see *Code review* below. Small habits become big careers. ⚠️ **5 exercise(s) that used to pass now fail.** Fix those first.
 
 ## 🎯 Your next lesson
 
-**Full-Stack Engineering Mastery: Day 2: CPU, RAM & Storage**
+**Full-Stack Engineering Mastery: 00 · Orientation: Set Up & Learn How to Learn**
 
-Month 01 · Week 1: How Computers Run Programs · 3 exercise(s) and challenge(s)
+Orientation · 0 exercise(s) and challenge(s)
 
-📂 `C:\Users\QweQu Antwi\Desktop\Full-Stack-Engineering-Mastery\Year1.Foundations-Frontend\M01.ComputingFundamentals\W1.HowComputersRunPrograms\D2.CPU-RAM-Storage\README.md` · about 120 minutes
+📂 `C:\Users\QweQu Antwi\Desktop\Full-Stack-Engineering-Mastery\00.Orientation\README.md` · about 120 minutes
 
 ### Today's plan
 
 | # | Course | Task | Why | Time |
 |---|---|---|---|---:|
-| 1 | Full-Stack Engineering Mastery | Day 2: CPU, RAM & Storage | Month 01 · Week 1: How Computers Run Programs · 3 exercise(s) and challenge(s) | 120 min |
-| 2 | JavaScript & TypeScript Mastery | Lesson 02: Values, Expressions & Statements | Module 001: Introduction to Programming · 3 exercise(s) and challenge(s) | 120 min |
-| ⏸ | The C++ 20 Masterclass | On hold | 2.3 planned weeks ahead of Full-Stack Engineering Mastery. Bring that course up first. | — |
+| 1 | Full-Stack Engineering Mastery | 00 · Orientation: Set Up & Learn How to Learn | Orientation · 0 exercise(s) and challenge(s) | 120 min |
+| 2 | JavaScript & TypeScript Mastery | 00 · Orientation | Orientation · 0 exercise(s) and challenge(s) | 120 min |
+| ⏸ | The C++ 20 Masterclass | On hold | 2.5 planned weeks ahead of Full-Stack Engineering Mastery. Bring that course up first. | — |
 
 ## 📊 Scoreboard
 
 | Course | Progress | Exercises | Pace | Projected finish | Status |
 |---|---|---|---|---|---|
-| Full-Stack Engineering Mastery | `░░░░░░░░░░░░` 0.1% | 4/18 | 0.48× plan | 06 Jun 2032 (low confidence) | early estimate |
-| JavaScript & TypeScript Mastery | `░░░░░░░░░░░░` 0.1% | 4/31 | 0.52× plan | 20 Jan 2030 (low confidence) | early estimate |
-| Python Engineering Mastery | `░░░░░░░░░░░░` 0.1% | 4/34 | 0.68× plan | 02 May 2030 (low confidence) | early estimate |
-| The C++ 20 Masterclass | `█░░░░░░░░░░░` 4.5% | 7/148 | 4.79× plan | 23 Dec 2026 (low confidence) | ⏸ ON HOLD |
+| Full-Stack Engineering Mastery | `░░░░░░░░░░░░` 0.0% | 0/18 | — | not enough data | not started |
+| JavaScript & TypeScript Mastery | `░░░░░░░░░░░░` 0.1% | 3/31 | 0.34× plan | 21 Nov 2031 (low confidence) | early estimate |
+| Python Engineering Mastery | `░░░░░░░░░░░░` 0.1% | 4/34 | 0.48× plan | 01 Nov 2031 (low confidence) | early estimate |
+| The C++ 20 Masterclass | `█░░░░░░░░░░░` 4.5% | 7/148 | 4.10× plan | 07 Jan 2027 (low confidence) | ⏸ ON HOLD |
 
 *Pace = planned study weeks completed per real week (1.00× = exactly on plan). Projections sharpen as you complete more lessons.*
 
@@ -37,16 +37,16 @@ Month 01 · Week 1: How Computers Run Programs · 3 exercise(s) and challenge(s)
 
 | Course | Planned weeks done | Expected by now | Difference | Last activity |
 |---|---:|---:|---:|---|
-| Full-Stack Engineering Mastery | 0.14 | 0.29 | -0.15 | 27 Sep 2026 |
-| JavaScript & TypeScript Mastery | 0.09 | 0.17 | -0.08 | 28 Sep 2026 |
-| Python Engineering Mastery | 0.10 | 0.14 | -0.05 | 29 Sep 2026 |
-| The C++ 20 Masterclass | 2.75 | 0.57 | +2.18 | 27 Sep 2026 |
+| Full-Stack Engineering Mastery | 0.00 | 0.39 | -0.39 | 29 Sep 2026 |
+| JavaScript & TypeScript Mastery | 0.09 | 0.27 | -0.18 | 29 Sep 2026 |
+| Python Engineering Mastery | 0.10 | 0.20 | -0.11 | 29 Sep 2026 |
+| The C++ 20 Masterclass | 2.75 | 0.67 | +2.08 | 27 Sep 2026 |
 
 ## 🚪 Gates
 
 | Course | Unit | Completion | Verdict | Missing |
 |---|---|---:|---|---|
-| Full-Stack Engineering Mastery | Month 01 · Week 1: How Computers Run Programs | 14% | IN PROGRESS | All exercises & debugging challenges pass (3/17 passing); Module review challenge done (not done yet); Notes, quiz answers & reflections written (1/6 lessons) |
+| Full-Stack Engineering Mastery | Month 01 · Week 1: How Computers Run Programs | 0% | IN PROGRESS | All exercises & debugging challenges pass (0/14 passing); Module review challenge done (not done yet); Notes, quiz answers & reflections written (1/6 lessons) |
 | JavaScript & TypeScript Mastery | Module 001: Introduction to Programming | 20% | IN PROGRESS | All exercises & debugging challenges pass (3/13 passing); Module review challenge done (not done yet); Notes, quiz answers & reflections written (1/5 lessons); Self-assessment gate ticked in the README (0/6 boxes) |
 | Python Engineering Mastery | Module 001: Python as a Programming Language | 17% | IN PROGRESS | All exercises & debugging challenges pass (3/16 passing); Module review challenge done (not done yet); Notes, quiz answers & reflections written (0/6 lessons); Self-assessment gate ticked in the README (0/6 boxes) |
 | The C++ 20 Masterclass | 01.HowComputersAndCppWork | 75% | IN PROGRESS | All exercises & debugging challenges pass (1/2 passing) |
@@ -58,14 +58,14 @@ Month 01 · Week 1: How Computers Run Programs · 3 exercise(s) and challenge(s)
 
 | Lesson | Done | Exercises | Notes |
 |---|---:|---|---:|
-| 00 · Orientation: Set Up & Learn How to Learn | 100% | 01_HelloNode ✅ | — |
-| Day 1: What Is Software Engineering? | 100% | 01_ReleaseNotes ✅ · 01_LifecycleNavigator ✅ · 02_WhichLayer ✅ | 100% |
+| 00 · Orientation: Set Up & Learn How to Learn | 0% | 01_HelloNode 📝 | — |
+| Day 1: What Is Software Engineering? | 0% | 01_ReleaseNotes 📝 · 01_LifecycleNavigator 📝 · 02_WhichLayer 📝 | 100% |
 
 ### JavaScript & TypeScript Mastery
 
 | Lesson | Done | Exercises | Notes |
 |---|---:|---|---:|
-| 00 · Orientation | 100% | 01_WarmUp ✅ | — |
+| 00 · Orientation | 0% | 01_WarmUp 📝 | — |
 | Lesson 01: What Programming Really Is | 100% | 01_VendingMachine ✅ · 01_TrafficLight ✅ · 02_Thermostat ✅ | 100% |
 
 ### Python Engineering Mastery
@@ -86,12 +86,8 @@ Month 01 · Week 1: How Computers Run Programs · 3 exercise(s) and challenge(s)
 ## 🔍 Code review
 
 - ⚠️ **Full-Stack Engineering Mastery · 01_HelloNode** `main.js:10`: A top-level console.log runs every time this module is imported (including by tests). Delete it, comment it out, or move demos into a separate file.
-- ⚠️ **Full-Stack Engineering Mastery · 01_HelloNode** `main.js:21`: A top-level console.log runs every time this module is imported (including by tests). Delete it, comment it out, or move demos into a separate file.
-- ⚠️ **Full-Stack Engineering Mastery · 01_ReleaseNotes** `main.js:13`: A top-level console.log runs every time this module is imported (including by tests). Delete it, comment it out, or move demos into a separate file.
-- ⚠️ **Full-Stack Engineering Mastery · 01_LifecycleNavigator** `main.js:28`: A top-level console.log runs every time this module is imported (including by tests). Delete it, comment it out, or move demos into a separate file.
-- ⚠️ **Full-Stack Engineering Mastery · 01_LifecycleNavigator** `main.js:29`: A top-level console.log runs every time this module is imported (including by tests). Delete it, comment it out, or move demos into a separate file.
-- ⚠️ **Full-Stack Engineering Mastery · 02_WhichLayer** `main.js:32`: A top-level console.log runs every time this module is imported (including by tests). Delete it, comment it out, or move demos into a separate file.
-- 💡 It passes. Remove the leftover TODO comments to finish tidily. *(13×: Full-Stack · 01_HelloNode, Full-Stack · 01_LifecycleNavigator, Full-Stack · 02_WhichLayer, JS/TS · 01_WarmUp, JS/TS · 01_TrafficLight, JS/TS · 02_Thermostat…)*
+- ⚠️ **JavaScript & TypeScript Mastery · 01_WarmUp** : Your code is 96% identical to the model answer. Fine if you wrote it yourself; if you peeked, redo this exercise from scratch in two days.
+- 💡 It passes. Remove the leftover TODO comments to finish tidily. *(9×: JS/TS · 01_TrafficLight, JS/TS · 02_Thermostat, Python · 01_WarmUp, Python · 01_ZenDecoder, Python · 02_WhatHappens, C++ · 01_TraceMe…)*
 - 💡 Correct result, but wording or formatting differs (compare with the README). *(3×: C++ · 02_AboutMe, C++ · 03_SecondsConverter, C++ · 04_CoinChange)*
 - 💡 Correct result, but wording differs. *(1×: C++ · 02_BiggestOfThree)*
 
@@ -100,25 +96,33 @@ Month 01 · Week 1: How Computers Run Programs · 3 exercise(s) and challenge(s)
 - **The C++ 20 Masterclass · 02_MemoryDetective**: 🔎 runs, output differs (0/1)
   - compiles and runs, but its output differs from the model answer's. Self-check it against the README
 
+## 🔁 Since my last review
+
+- ⚠️ Regression (was passing): fullstack: 00.Orientation/Exercises/01_HelloNode
+- ⚠️ Regression (was passing): fullstack: Year1.Foundations-Frontend/M01.ComputingFundamentals/W1.HowComputersRunPrograms/D1.WhatIsSoftwareEngineering/Debugging/01_ReleaseNotes
+- ⚠️ Regression (was passing): fullstack: Year1.Foundations-Frontend/M01.ComputingFundamentals/W1.HowComputersRunPrograms/D1.WhatIsSoftwareEngineering/Exercises/01_LifecycleNavigator
+- ⚠️ Regression (was passing): fullstack: Year1.Foundations-Frontend/M01.ComputingFundamentals/W1.HowComputersRunPrograms/D1.WhatIsSoftwareEngineering/Exercises/02_WhichLayer
+- ⚠️ Regression (was passing): jsts: 00.Orientation/Exercises/01_WarmUp
+
 ## 💾 Uncommitted work
 
 Commit at the end of every session; your history is how I measure your pace.
 
-- **Full-Stack Engineering Mastery**: 2 file(s), e.g. `.gitignore`
-- **JavaScript & TypeScript Mastery**: 2 file(s), e.g. `.gitignore`
-- **Python Engineering Mastery**: 2 file(s), e.g. `.gitignore`
-- **The C++ 20 Masterclass**: 2 file(s), e.g. `.gitignore`
+- **Full-Stack Engineering Mastery**: 3 file(s), e.g. `AGENTS.md`
+- **JavaScript & TypeScript Mastery**: 2 file(s), e.g. `AGENTS.md`
+- **Python Engineering Mastery**: 2 file(s), e.g. `AGENTS.md`
+- **The C++ 20 Masterclass**: 3 file(s), e.g. `.gitignore`
 
 ## ❤️ Wellbeing
 
-- Streak: **3 day(s)** · active 3/7 days this week
-- 🔥 3-day streak. Consistency beats intensity, keep it going.
+- Streak: **4 day(s)** · active 4/7 days this week
+- 🔥 4-day streak. Consistency beats intensity, keep it going.
 
 ## 🔐 New-lesson authorization
 
 | Course | Next unit | Decision | Reasons |
 |---|---|---|---|
-| Full-Stack Engineering Mastery | Month 01 · Week 2: Terminal & JavaScript Survival Kit | ⛔ DENIED | Gate not passed: Month 01 · Week 1: How Computers Run Programs (IN PROGRESS, 14% complete) |
+| Full-Stack Engineering Mastery | Month 01 · Week 2: Terminal & JavaScript Survival Kit | ⛔ DENIED | Gate not passed: Month 01 · Week 1: How Computers Run Programs (IN PROGRESS, 0% complete) |
 | JavaScript & TypeScript Mastery | Module 003: Variables & Values | ⛔ DENIED | Gate not passed: Module 001: Introduction to Programming (IN PROGRESS, 20% complete)<br>Gate not passed: Module 002: The JavaScript Environment (NOT STARTED, 0% complete)<br>Gate not passed: Phase 01: Programming Foundations · exam (NOT STARTED, 0% complete) |
 | Python Engineering Mastery | Module 003: Syntax & Program Structure | ⛔ DENIED | Gate not passed: Module 001: Python as a Programming Language (IN PROGRESS, 17% complete)<br>Gate not passed: Module 002: Development Environment (NOT STARTED, 0% complete) |
 | The C++ 20 Masterclass | — | ⛔ DENIED | Every lesson in this course already exists. ATLAS controls pacing and gates only. |

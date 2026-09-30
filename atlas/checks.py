@@ -8,6 +8,9 @@ from pathlib import Path
 
 from .model import Finding
 
+# Notes the tutor (Athena) writes go between these markers. They never count as the learner's own notes.
+TUTOR_BLOCK_START, TUTOR_BLOCK_END = "<!-- athena:start -->", "<!-- athena:end -->"
+
 # (rule id, severity, regex applied to code lines with comments removed, message)
 RULES = {
     ".js": [
@@ -106,10 +109,16 @@ def _sections(text: str) -> dict[str, set[str]]:
     return sections
 
 
+def strip_tutor_blocks(text: str) -> str:
+    """Remove everything the tutor wrote, so only the learner's own words are judged."""
+    pattern = re.escape(TUTOR_BLOCK_START) + r".*?(?:" + re.escape(TUTOR_BLOCK_END) + r"|\Z)"
+    return re.sub(pattern, "", text, flags=re.S)
+
+
 def notes_score(current: str, template: str | None) -> float:
-    """Share of the template's sections that now contain something new (0–1)."""
+    """Share of the template's sections that now contain something new (0–1). Tutor-written blocks don't count."""
     template_sections = _sections(template or "")
-    now = _sections(current)
+    now = _sections(strip_tutor_blocks(current))
     headings = [h for h in template_sections if h != "_intro"] or [h for h in now if h != "_intro"]
     if not headings:
         return 0.0

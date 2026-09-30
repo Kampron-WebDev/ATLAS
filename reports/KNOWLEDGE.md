@@ -4,13 +4,13 @@ Built from every lesson you've started. Cover the answers and test yourself: if 
 
 ## 🔁 Reviews due now (spaced repetition)
 
-- **Full-Stack Engineering Mastery · Day 1: What Is Software Engineering?**: 1-day review. Re-answer its quiz without notes.
 - **JavaScript & TypeScript Mastery · Lesson 01: What Programming Really Is**: 1-day review. Re-answer its quiz without notes.
+- **Python Engineering Mastery · Lesson 01: What Python Is and Is Not**: 1-day review. Re-answer its quiz without notes.
 - **The C++ 20 Masterclass · Lesson 02: Programming Thinking**: 1-day review. Re-answer its quiz without notes.
 
 ## Full-Stack Engineering Mastery
 
-### Day 1: What Is Software Engineering? (✅ complete)
+### Day 1: What Is Software Engineering? (0% done)
 
 **Key terms:**
 
@@ -31,8 +31,6 @@ Built from every lesson you've started. Cover the answers and test yourself: if 
 1. What caused the Ariane 5 failure, in plain words?
 1. In a web app, which layer should decide whether a user is allowed to see another user's data: frontend or backend? Why?
 1. What does "integrated over time" mean in "programming integrated over time"?
-
-*Next review: 30 Sep 2026*
 
 ## JavaScript & TypeScript Mastery
 
@@ -56,7 +54,7 @@ Built from every lesson you've started. Cover the answers and test yourself: if 
 1. What is a state machine?
 1. "The computer made a mistake." Why do programmers rarely believe this sentence?
 
-*Next review: 29 Sep 2026*
+*Next review: 01 Oct 2026*
 
 ### 🎯 Gate questions for Module 001: Introduction to Programming
 - What is the difference between an expression and a statement? Give three of each.

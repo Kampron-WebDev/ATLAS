@@ -9,6 +9,7 @@
     atlas eta                      pace and projected finish dates
     atlas history                  your progress over time
     atlas courses                  the course keys ATLAS knows
+    atlas tutor [path | search]    Athena's context pack for a lesson or exercise (fast, runs no tests)
 
 Options: --no-tests (use cached results only) · --open (open the dashboard) · --course KEY
 """
@@ -21,7 +22,7 @@ import os
 import sys
 import webbrowser
 
-from . import brain, engine, reports
+from . import brain, engine, reports, tutor
 from .config import load_config
 from .state import History, Ledger
 
@@ -87,6 +88,8 @@ def main(argv=None) -> int:
     sub.add_parser("eta", help="pace and projected finish")
     sub.add_parser("history", help="progress over time")
     sub.add_parser("courses", help="list course keys")
+    t = sub.add_parser("tutor", help="context pack for Athena, the tutor")
+    t.add_argument("target", nargs="*", help="a lesson/exercise path, or words from a lesson title")
     args = parser.parse_args(argv)
 
     config = load_config()
@@ -104,6 +107,18 @@ def main(argv=None) -> int:
         for s in snaps[-20:]:
             cells = "  ".join(f"{k}:{v['progress']:.1%}" for k, v in s["courses"].items())
             print(f"  {s['date'][:16]}  {cells}")
+        return 0
+
+    if command == "tutor":
+        if not args.target:
+            print(tutor.overview_md(config))
+            return 0
+        target = " ".join(args.target)
+        found = tutor.locate(config, target)
+        if found is None:
+            print(f"No lesson matches '{target}'. Give a folder path, or words from the lesson title.")
+            return 2
+        print(tutor.context_md(config, found))
         return 0
 
     if command == "record":
