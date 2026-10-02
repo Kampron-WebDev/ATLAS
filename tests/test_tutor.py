@@ -133,3 +133,18 @@ def test_lesson_without_my_notes_gets_a_separate_tutor_notes_file(tmp_path):
     config = python_course(tmp_path)
     lesson = tutor.search(config, "first steps").lesson
     assert tutor.notes_file(lesson).name == tutor.TUTOR_NOTES
+
+
+def test_status_is_stale_when_the_learner_committed_after_the_last_review(tmp_path):
+    import os
+    from datetime import datetime, timedelta
+    from types import SimpleNamespace
+
+    config = python_course(tmp_path)
+    cfg = config.courses[0]
+    reviewed = datetime.now().astimezone() - timedelta(hours=2)
+    status = cfg.path / "ATLAS-STATUS.md"
+    os.utime(status, (reviewed.timestamp(), reviewed.timestamp()))
+    assert not tutor.status_is_stale(cfg, SimpleNamespace(commit_dates=[reviewed - timedelta(hours=1)]))
+    assert tutor.status_is_stale(cfg, SimpleNamespace(commit_dates=[reviewed + timedelta(hours=1)]))
+    assert not tutor.status_is_stale(cfg, SimpleNamespace(commit_dates=[]))

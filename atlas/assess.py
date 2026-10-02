@@ -72,16 +72,19 @@ def assess_course(cfg: CourseConfig, config: Config, cache: Cache, run_tests: bo
     def should_assess(ex: Exercise) -> bool:
         return bool(ex.student_files) and (ex.modified or lesson_order[ex.lesson_rel] <= frontier)
 
-    def job(ex: Exercise) -> tuple[Exercise, Outcome | None]:
+    def job(ex: Exercise) -> tuple[Exercise, Outcome | None, bool]:
         files = ex.student_files + ex.test_files
         if adapter.kind == "cpp" and ex.solution_dir:
             files += list(ex.solution_dir.glob("*.cpp"))
         fp = fingerprint(files, extra=adapter.kind + cfg.stdin)
         cached = cache.get(ex.key, fp)
         if cached is not None:
-            return ex, Outcome.from_dict(cached)
-        if not run_tests:  # --no-tests: only reuse results for code that hasn't changed
-            return ex, None
+            return ex, Outcome.from_dict(cached), False
+        if not run_tests:
+            # --no-tests: the code changed since it was last run. Keep its last result (flagged as not
+            # re-run) instead of dropping it to zero, which would make finished lessons look undone.
+            last = cache.last(ex.key)
+            return ex, (Outcome.from_dict(last) if last is not None else None), True
         if adapter.kind == "node":
             outcome = run_node(ex.dir, ex.test_files, config.test_timeout)
         elif adapter.kind == "pytest":
@@ -89,17 +92,19 @@ def assess_course(cfg: CourseConfig, config: Config, cache: Cache, run_tests: bo
         else:
             outcome = run_cpp(ex.dir, ex.solution_dir, cfg.gxx, cfg.stdin, config.test_timeout)
         cache.put(ex.key, fp, outcome.to_dict())
-        return ex, outcome
+        return ex, outcome, False
 
     to_run = [ex for ex in exercises if should_assess(ex)]
     with ThreadPoolExecutor(max_workers=config.workers) as pool:
-        for ex, outcome in pool.map(job, to_run):
+        for ex, outcome, stale in pool.map(job, to_run):
             if outcome is None:
                 ex.status, ex.detail = "manual", "changed since the last full review. Run `atlas` without --no-tests"
                 continue
             ex.passed, ex.total = outcome.passed, outcome.total
             ex.failures, ex.detail = outcome.failures, outcome.detail
             ex.status = _status(outcome, adapter.kind)
+            if stale:
+                ex.detail = "last known result: edited since, not re-run (--no-tests). Run `atlas` to re-check"
             # An untouched starter isn't "failing": it's waiting for you. (C++ is exempt: work there
             # can pre-date the first commit, so "unchanged" doesn't mean "untouched".)
             if not ex.modified and ex.status not in ("passed", "manual") and adapter.kind != "cpp":

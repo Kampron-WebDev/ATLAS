@@ -1,6 +1,6 @@
 # 📝 ATLAS Author Brief: Python Engineering Mastery
 
-*For whoever writes this learner's next lessons (usually Claude). Generated 30 Sep 2026 05:55.*
+*For whoever writes this learner's next lessons (usually Claude). Generated 02 Oct 2026 22:19.*
 
 **Authorization:** ⛔ DENIED. Next unit: Module 003: Syntax & Program Structure
 
@@ -9,7 +9,7 @@
 
 ## Learner profile
 
-- Pace: 0.48× plan (recent 0.48×)
+- Pace: 0.17× plan (recent 0.17×)
 - Lessons completed: 1 · touched: 1
 - Exercises passing: 4/34
 - Average notes completeness: 33%
@@ -17,7 +17,7 @@
 
 ## Directives (binding)
 
-1. Pace is 0.5× the plan. Reduce the load: smaller steps, more worked examples, hints on every exercise, and split long lessons in two.
+1. Pace is 0.2× the plan. Reduce the load: smaller steps, more worked examples, hints on every exercise, and split long lessons in two.
 2. Reflection and quiz answers are being skipped. Make them part of the exercises (e.g. a test that reads an ANSWERS.md), and keep lesson reading shorter.
 3. Finished code keeps its TODO comments. Add 'tidy up' to the Done-when checklist.
 4. The learner has completed C++ up to 'Lesson 02: Programming Thinking'. Cross-reference those concepts where they help.

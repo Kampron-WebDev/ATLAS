@@ -78,7 +78,9 @@ The summons can also be `/athena …` (Claude Code), `$athena …` (Codex) or a 
 4. **Read the lesson itself:** `README.md` in full, the files in `Examples/`, each exercise's `README.md` and
    starter file, and the learner's notes file (their "Still fuzzy" line is gold: teach to it). You may read
    `solution/` **only** to calibrate your hints, and never reveal it.
-5. **Respect ATLAS** (§13): if the pack says ON HOLD or AHEAD, handle that first.
+5. **Respect ATLAS** (§13): if the pack says ON HOLD or AHEAD, handle that first. If it also says **STALE**, or the
+   learner says they already finished the lesson ATLAS names, run `atlas next` (it re-runs their code) and rebuild
+   the pack before you mention AHEAD. Never tell the learner they're behind based on a stale status.
 6. **New lesson?** Build the concept map (§4) and write the session file from `tutor/templates/session.md`.
    **Resuming?** Take the concept map and the "Resume here" line from the session file.
 

@@ -4,13 +4,14 @@ Built from every lesson you've started. Cover the answers and test yourself: if 
 
 ## 🔁 Reviews due now (spaced repetition)
 
-- **JavaScript & TypeScript Mastery · Lesson 01: What Programming Really Is**: 1-day review. Re-answer its quiz without notes.
+- **Full-Stack Engineering Mastery · Day 1: What Is Software Engineering?**: 1-day review. Re-answer its quiz without notes.
+- **JavaScript & TypeScript Mastery · Lesson 01: What Programming Really Is**: 3-day review. Re-answer its quiz without notes.
 - **Python Engineering Mastery · Lesson 01: What Python Is and Is Not**: 1-day review. Re-answer its quiz without notes.
-- **The C++ 20 Masterclass · Lesson 02: Programming Thinking**: 1-day review. Re-answer its quiz without notes.
+- **The C++ 20 Masterclass · Lesson 02: Programming Thinking**: 3-day review. Re-answer its quiz without notes.
 
 ## Full-Stack Engineering Mastery
 
-### Day 1: What Is Software Engineering? (0% done)
+### Day 1: What Is Software Engineering? (✅ complete)
 
 **Key terms:**
 
@@ -31,6 +32,33 @@ Built from every lesson you've started. Cover the answers and test yourself: if 
 1. What caused the Ariane 5 failure, in plain words?
 1. In a web app, which layer should decide whether a user is allowed to see another user's data: frontend or backend? Why?
 1. What does "integrated over time" mean in "programming integrated over time"?
+
+*Next review: 02 Oct 2026*
+
+### Day 2: CPU, RAM & Storage (✅ complete)
+
+**Key terms:**
+
+| Term | Meaning |
+|---|---|
+| CPU / core | The processor / one independent processing unit inside it |
+| Clock speed (GHz) | Billions of CPU ticks per second |
+| Register | Tiny storage inside the CPU for values being used right now |
+| Cache (L1/L2/L3) | Small, fast memory between the CPU and RAM |
+| RAM | Main working memory; volatile |
+| Storage | Persistent memory (SSD, HDD) |
+| Latency | How long one operation takes to *start* giving results |
+| Locality | The tendency to reuse recent or nearby data |
+
+**Can you answer these without notes?**
+1. Match: CPU / RAM / SSD ↔ counter / chef / pantry.
+1. What does *volatile* mean, and which of RAM and SSD is volatile?
+1. Name the three steps of the CPU cycle.
+1. Roughly how many times slower is a RAM read than an L1 cache read?
+1. Why does looping over an array in order usually beat jumping around in it?
+1. A friend says "my web page is slow, I'll buy a faster CPU." What question should you ask first?
+
+*Next review: 03 Oct 2026*
 
 ## JavaScript & TypeScript Mastery
 
@@ -54,7 +82,7 @@ Built from every lesson you've started. Cover the answers and test yourself: if 
 1. What is a state machine?
 1. "The computer made a mistake." Why do programmers rarely believe this sentence?
 
-*Next review: 01 Oct 2026*
+*Next review: 05 Oct 2026*
 
 ### 🎯 Gate questions for Module 001: Introduction to Programming
 - What is the difference between an expression and a statement? Give three of each.
@@ -84,7 +112,7 @@ Built from every lesson you've started. Cover the answers and test yourself: if 
 1. What is a PEP? Name two famous ones.
 1. How often does a new Python version come out, and roughly how long is each supported?
 
-*Next review: 30 Sep 2026*
+*Next review: 02 Oct 2026*
 
 ### 🎯 Gate questions for Module 001: Python as a Programming Language
 - Walk through source → tokens → AST → bytecode → PVM for a two-line program.
@@ -141,4 +169,4 @@ Built from every lesson you've started. Cover the answers and test yourself: if 
 1. Trace: `int x = 2; x = x * 3; x = x - 1;` What is `x`?
 1. Give 3 edge cases for "divide the bill between N friends".
 
-*Next review: 30 Sep 2026*
+*Next review: 04 Oct 2026*

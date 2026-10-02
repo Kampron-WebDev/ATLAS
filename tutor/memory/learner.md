@@ -50,6 +50,11 @@
 
 ## What works for them
 
+- Hand-tracing with a table (PC/registers, loop passes) and counting by hand (32 trips vs 2) beat jargon every time. Library/desk/photocopier story for cache lines; board-game "go back to square 2" for jumps.
+- Units discipline needs repeating: label what each number IS (count vs time, B vs KB). Slipped 3 times in D2, fixed each within one exchange.
+- Finds his own bugs when asked to trace and test his rule on an edge input (1536, 2*1024**5, [73], []). Keep using "test your own rule on one more input".
+- Writes his own notes when asked; prefers to answer in chat first. Do not write his notes sections.
+
 - Comparison tables and side-by-side language comparisons (they write these unprompted).
 - Concrete scenarios (traffic light, microwave, school attendance app).
 - *(Record the analogies and diagrams that land, as sessions happen.)*

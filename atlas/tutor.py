@@ -191,6 +191,14 @@ def current_rel(cfg: CourseConfig) -> str:
     return match.group(1) if match else ""
 
 
+def status_is_stale(cfg: CourseConfig, repo: Repo) -> bool:
+    """True if the learner committed after ATLAS last wrote this course's status file."""
+    status = cfg.path / "ATLAS-STATUS.md"
+    if not status.exists() or not repo.commit_dates:
+        return False
+    return max(repo.commit_dates) > datetime.fromtimestamp(status.stat().st_mtime).astimezone()
+
+
 def hold_text(cfg: CourseConfig) -> str:
     match = re.search(r"ON HOLD\.\*\*\s*(.+)", _read(cfg.path / "ATLAS-STATUS.md"))
     return match.group(1).strip() if match else ""
@@ -308,6 +316,10 @@ def context_md(config: Config, found: Located, now: datetime | None = None) -> s
     else:
         relation = (f"⏩ AHEAD by {index - current_index} lesson(s) of ATLAS's current one "
                     f"('{lessons[current_index].title}').")
+    repo, cache = Repo(cfg.path), Cache(config.root / ".cache" / "results.json")
+    if status_is_stale(cfg, repo):
+        relation += (" ⚠️ STALE: the learner committed after ATLAS's last review, so this may be out of date. "
+                     "Run `atlas next` to refresh before acting on it.")
     hold = hold_text(cfg)
 
     md += ["## 📍 Where this is", "",
@@ -328,7 +340,6 @@ def context_md(config: Config, found: Located, now: datetime | None = None) -> s
             md.append("- ⚠️ The path points INTO the model answer (`solution/`). Never show or paraphrase it to the learner.")
         md.append("")
 
-    repo, cache = Repo(cfg.path), Cache(config.root / ".cache" / "results.json")
     if lesson.exercises:
         md += ["## 🧪 Exercises in this lesson (status from ATLAS's cache)", ""]
         for ex in lesson.exercises:

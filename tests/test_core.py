@@ -160,3 +160,13 @@ def test_parse_gate(tmp_path):
     questions, ticked, total = knowledge.parse_gate(_write(tmp_path, "README.md", MODULE))
     assert questions == ["What is a closure?", "Why use one?"]
     assert (ticked, total) == (2, 3)
+
+
+def test_cache_keeps_the_last_result_after_the_code_changes(tmp_path):
+    from atlas.state import Cache
+
+    cache = Cache(tmp_path / "results.json")
+    cache.put("fullstack:ex", "old-fp", {"passed": 2, "total": 2})
+    assert cache.get("fullstack:ex", "new-fp") is None  # changed code is not a fresh hit…
+    assert cache.last("fullstack:ex") == {"passed": 2, "total": 2}  # …but --no-tests can still show its last result
+    assert cache.last("fullstack:other") is None

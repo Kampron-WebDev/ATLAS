@@ -34,6 +34,11 @@ class Cache:
         entry = self.data.get(key)
         return entry["outcome"] if entry and entry.get("fp") == fp else None
 
+    def last(self, key: str) -> dict | None:
+        """The most recent result for this exercise, even if its code has changed since."""
+        entry = self.data.get(key)
+        return entry["outcome"] if entry else None
+
     def put(self, key: str, fp: str, outcome: dict) -> None:
         self.data[key] = {"fp": fp, "outcome": outcome}
 
